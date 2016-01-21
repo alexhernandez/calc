@@ -1,2 +1,2 @@
-# reckon
-Simple Calculator w/ Jasmine &amp; Vue
+# Reckon
+A Delightfully Simple Calculator

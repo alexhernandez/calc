@@ -1,0 +1,13 @@
+{
+  "name": "Reckon",
+  "version": "1.0.0",
+  "description": "A Delightfully Simple Calculator",
+  "authors": [
+    "Alex Hernandez <oorangecchicken@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "vue": "~1.0.15"
+  }
+}
