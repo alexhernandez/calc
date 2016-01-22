@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "vue": "~1.0.15"
+    "normalize-css": "~3.0.3",
+    "font-awesome": "fontawesome#~4.5.0"
   }
 }

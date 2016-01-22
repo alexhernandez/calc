@@ -3,20 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
   <title>Reckon | Alex Hernandez</title>
   <meta name="description" content="A Delightfully Simple Calculator">
 
-  <!-- STYLESHEETS -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
-  <h1>Reckon</h1>
+  <div class="calc">
+    <div class="calc__header">
+      <div class="brand">- RECKON -</div>
+      <div class="calc__total">0</div>
+      <div class="calc__tally"><span class="cursor">|</span></div>
+    </div>
+    <div class="calc__content">
+      <ul class="calc__grid calc__col--left">
+        <li class="calc__unit"><div class="calc__clear"><i class="fa fa-times-circle"></i></div></li>
+        <li class="calc__unit calc__unit--offset"><div class="calc__backspace">&larr;</div></li>
+        <li class="calc__unit"><div class="calc__int">7</div></li>
+        <li class="calc__unit"><div class="calc__int">8</div></li>
+        <li class="calc__unit"><div class="calc__int">9</div></li>
+        <li class="calc__unit"><div class="calc__int">4</div></li>
+        <li class="calc__unit"><div class="calc__int">5</div></li>
+        <li class="calc__unit"><div class="calc__int">6</div></li>
+        <li class="calc__unit"><div class="calc__int">1</div></li>
+        <li class="calc__unit"><div class="calc__int">2</div></li>
+        <li class="calc__unit"><div class="calc__int">3</div></li>
+        <li class="calc__unit calc__unit--offset"><div class="calc__int">0</div></li>
+        <li class="calc__unit"><div class="calc__decimal">.</div></li>
+      </ul>
+      <ul class="calc__grid calc__col--right">
+        <li class="calc__unit"><div class="calc__operator">/</div></li>
+        <li class="calc__unit"><div class="calc__operator">*</div></li>
+        <li class="calc__unit"><div class="calc__operator">-</div></li>
+        <li class="calc__unit"><div class="calc__operator">+</div></li>
+        <li class="calc__unit"><div class="calc__operator">=</div></li>
+      </ul>
+    </div>
+  </div>
 
   <!-- SCRIPTS -->
-  <script src="js/app.js"></script>
+  <script src="js/Reckon.js"></script>
+  <script src="js/ReckonInterface.js"></script>
 </body>
 </html>
