@@ -13,6 +13,8 @@
   font-weight: 700;
   text-transform: uppercase;
   z-index: 3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .calc{}
@@ -29,7 +31,7 @@
   font-weight: 300;
   color: $white;
   height: 225px;
-  padding-top: 80px;
+  padding-top: 85px;
   text-align: center;
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
@@ -43,11 +45,11 @@
     }
     50% {
       color: $darkest-blue;
-      padding-top: 100px;
+      padding-top: 125px;
     }
     100%  {
       color: $white;
-      padding-top: 80px;
+      padding-top: 85px;
     }
 }
 

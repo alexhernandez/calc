@@ -384,7 +384,9 @@ body {
   letter-spacing: 5px;
   font-weight: 700;
   text-transform: uppercase;
-  z-index: 3; }
+  z-index: 3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .calc__header {
   position: relative;
@@ -397,7 +399,7 @@ body {
   font-weight: 300;
   color: #F2F3F3;
   height: 225px;
-  padding-top: 80px;
+  padding-top: 85px;
   text-align: center;
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
@@ -409,10 +411,10 @@ body {
     color: #1D2630; }
   50% {
     color: #1D2630;
-    padding-top: 100px; }
+    padding-top: 125px; }
   100% {
     color: #F2F3F3;
-    padding-top: 80px; } }
+    padding-top: 85px; } }
 .calc__tally {
   background-color: #202936;
   width: 100%;
