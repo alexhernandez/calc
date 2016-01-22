@@ -82,11 +82,13 @@
 .calc__col--left{
   float: left;
   width: 225px;
+  // background-color: $darkest-blue;
 }
 
 .calc__col--right{
   float: right;
   width: 75px;
+  // background-color: $darkest-blue;
 }
 
 .calc__unit{
@@ -95,8 +97,6 @@
   float: left;
   position: relative;
   z-index: 1;
-  // border: 1px solid $brown;
-
 
   &:after{
     content: " ";
@@ -105,6 +105,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+
     // REVERSE
     margin: 35px;
     border-radius: 50%;
@@ -127,9 +128,13 @@
   left: 0;
   right: 0;
   z-index: 3;
+  line-height: 1.5;
 }
 
 .calc__unit:hover{
+
+  // background-color: $darkest-blue;
+
   &:after{
     border: 1px solid $white;
     border-radius: 50%;

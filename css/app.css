@@ -479,7 +479,8 @@ body {
   font-weight: 300;
   left: 0;
   right: 0;
-  z-index: 3; }
+  z-index: 3;
+  line-height: 1.5; }
 
 .calc__unit:hover:after {
   border: 1px solid #F2F3F3;
