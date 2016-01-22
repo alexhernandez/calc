@@ -531,5 +531,13 @@ body {
     color: transparent; }
   50% {
     color: #CAA37C; } }
+.select ::selection {
+  background: #82878E; }
+
+.select--disable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 /*# sourceMappingURL=app.css.map */
