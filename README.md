@@ -1,2 +1,2 @@
 # Reckon
-A Delightfully Simple Calculator
+A Delightfully Elegant Calculator
