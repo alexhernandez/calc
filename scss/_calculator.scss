@@ -76,19 +76,19 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: $blue;
   @include clearfix;
+  background-color: $darkest-blue;
 }
 
 .calc__col--left{
   float: left;
   width: 225px;
-  // background-color: $darkest-blue;
 }
 
 .calc__col--right{
   float: right;
   width: 75px;
-  // background-color: $darkest-blue;
 }
 
 .calc__unit{
@@ -97,6 +97,8 @@
   float: left;
   position: relative;
   z-index: 1;
+  border-right: 1px solid $blue;
+  border-bottom: 1px solid $blue;
 
   &:after{
     content: " ";
@@ -133,7 +135,7 @@
 
 .calc__unit:hover{
 
-  // background-color: $darkest-blue;
+  background-color: $darkest-blue;
 
   &:after{
     border: 1px solid $white;

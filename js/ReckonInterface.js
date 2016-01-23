@@ -6,8 +6,17 @@
 // * Free to use under the MIT license.
 // */
 
-function ReckonInterface () {
+// function ReckonInterface () {
+// }
 
-}
+// ReckonInterface.prototype.getClickedValue = function(){
+// }
 
-module.exports = ReckonInterface;
+console.log('asd');
+
+document.getElementsByClassName("calc__unit").onclick = function (){
+  alert('hi');
+};
+
+console.log('asd');
+// module.exports = ReckonInterface;
