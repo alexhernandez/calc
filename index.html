@@ -15,11 +15,11 @@
 </head>
 <body>
 
-  <div class="calc">
+  <div id="reckon" class="calc">
     <div class="calc__header select">
       <div class="brand select--disable">- RECKON -</div>
       <div class="calc__total">0</div>
-      <div class="calc__tally"><span class="cursor">|</span></div>
+      <div class="calc__tally calc__tally--blink"></div>
     </div>
     <div class="calc__content select--disable">
       <ul class="calc__grid calc__col--left">
@@ -48,6 +48,7 @@
   </div>
 
   <!-- SCRIPTS -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="js/Reckon.js"></script>
   <script src="js/ReckonInterface.js"></script>
 </body>

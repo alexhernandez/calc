@@ -34,6 +34,8 @@
   padding-top: 85px;
   text-align: center;
   letter-spacing: 1px;
+  white-space: nowrap;
+  overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   animation: fadeSlide 1.5s;
@@ -92,6 +94,7 @@
 }
 
 .calc__unit{
+  cursor: pointer;
   width: 75px;
   height: 75px;
   float: left;
@@ -118,19 +121,18 @@
 
 }
 
-.calc__clear, .calc__backspace,
+.calc__val, .calc__clear, .calc__backspace,
 .calc__int, .calc__operator, .calc__decimal {
-  color: $white;
+  position: relative;
+  color: #F2F3F3;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  margin-top: -25%;
   font-size: 25px;
   font-weight: 300;
   left: 0;
   right: 0;
   z-index: 3;
   line-height: 1.5;
+  padding: 18px 0;
 }
 
 .calc__unit:hover{
@@ -149,7 +151,7 @@
     border: 1px solid $brown;
     background-color: $brown;
   }
-  .calc__clear, .calc__backspace,
+  .calc__val, .calc__clear, .calc__backspace,
   .calc__int, .calc__operator, .calc__decimal {
     font-weight: 400;
     color: $dark-blue;
@@ -165,8 +167,9 @@
 }
 
 
-.cursor {
+.calc__tally--blink:after {
   color: $brown;
+  content: "|";
   -webkit-animation: 1.5s blink step-end infinite;
   -moz-animation: 1.5s blink step-end infinite;
   -ms-animation: 1.5s blink step-end infinite;

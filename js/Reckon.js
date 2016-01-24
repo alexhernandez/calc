@@ -32,4 +32,4 @@ Reckon.prototype.clear = function() {
   return this.total = 0;
 };
 
-module.exports = Reckon;
+// module.exports = Reckon;

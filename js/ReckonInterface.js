@@ -6,17 +6,48 @@
 // * Free to use under the MIT license.
 // */
 
-// function ReckonInterface () {
-// }
+'use strict';
 
-// ReckonInterface.prototype.getClickedValue = function(){
-// }
+function ReckonInterface() {
+  this.operator = 'hi';
+}
 
-console.log('asd');
+// ReckonInterface.VERSION  = '1.0.0';
 
-document.getElementsByClassName("calc__unit").onclick = function (){
-  alert('hi');
-};
+function getCalcDisplayTotal(){
+  return document.getElementsByClassName("calc__total");
+}
+function getCalcTallyTotal(){
+  return document.getElementsByClassName("calc__tally");
+}
 
-console.log('asd');
-// module.exports = ReckonInterface;
+function joinCalcValue(value){
+  var calcDisplay = getCalcDisplayTotal();
+  var calcTally = getCalcTallyTotal();
+
+  calcTally[0].innerHTML += value;
+  return calcDisplay[0].innerHTML += value;
+}
+
+function setCalcDisplayTotal(value){
+    if (value.target.className == 'calc__int') {
+      return joinCalcValue(value.target.innerText);
+    }
+}
+
+function clearDisplayTotal(value){
+    if (value.target.className == 'calc__int') {
+      return joinCalcValue(value.target.innerText);
+    }
+}
+
+
+
+
+var test = new ReckonInterface();
+
+document.getElementById("reckon").addEventListener("click", setCalcDisplayTotal);
+
+
+
+
