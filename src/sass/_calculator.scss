@@ -38,7 +38,7 @@
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  animation: fadeSlide 1.5s;
+  // animation: fadeSlide 1.5s;
 }
 
 @keyframes fadeSlide {
@@ -115,7 +115,7 @@
     margin: 35px;
     border-radius: 50%;
     border: 1px solid transparent;
-    transition: all .1s ease-in-out;
+    transition: all .15s ease-in-out;
     z-index: 2;
   }
 
@@ -140,7 +140,7 @@
   background-color: $darkest-blue;
 
   &:after{
-    border: 1px solid $white;
+    border: 1px solid $brown;
     border-radius: 50%;
     margin: 15px;
   }
@@ -167,14 +167,14 @@
 }
 
 
-.calc__tally--blink:after {
+.type--blink:after {
   color: $brown;
   content: "|";
-  -webkit-animation: 1.5s blink step-end infinite;
-  -moz-animation: 1.5s blink step-end infinite;
-  -ms-animation: 1.5s blink step-end infinite;
-  -o-animation: 1.5s blink step-end infinite;
-  animation: 1.5s blink step-end infinite;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
 }
 
 @keyframes "blink" {

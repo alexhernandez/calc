@@ -1,14 +1,7 @@
 {
-  "name": "Reckon",
-  "version": "1.0.0",
-  "description": "A Delightfully Elegant Calculator",
-  "authors": [
-    "Alex Hernandez <oorangecchicken@gmail.com>"
-  ],
-  "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "jasmine-jquery": "^2.1.1",
-    "jquery": "^2.2.0"
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-2",
+    "laravel-elixir-scss-lint": "^1.3.0"
   }
 }

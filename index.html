@@ -8,18 +8,17 @@
   <title>Reckon | Alex Hernandez</title>
   <meta name="description" content="A Delightfully Elegant Calculator">
 
-  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="dist/css/reckon.css">
 </head>
 <body>
 
   <div id="reckon" class="calc">
     <div class="calc__header select">
       <div class="brand select--disable">- RECKON -</div>
-      <div class="calc__total">0</div>
-      <div class="calc__tally calc__tally--blink"></div>
+      <div class="calc__total type--blink">0</div>
+      <div class="calc__tally">Start Calculating :</div>
     </div>
     <div class="calc__content select--disable">
       <ul class="calc__grid calc__col--left">
@@ -48,8 +47,6 @@
   </div>
 
   <!-- SCRIPTS -->
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="js/Reckon.js"></script>
-  <script src="js/ReckonInterface.js"></script>
+  <script src="dist/js/reckon.js"></script>
 </body>
 </html>

@@ -405,8 +405,17 @@ body {
   white-space: nowrap;
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  animation: fadeSlide 1.5s; }
+  -moz-osx-font-smoothing: grayscale; }
+
+@-webkit-keyframes fadeSlide {
+  0% {
+    color: #1D2630; }
+  50% {
+    color: #1D2630;
+    padding-top: 125px; }
+  100% {
+    color: #F2F3F3;
+    padding-top: 85px; } }
 
 @keyframes fadeSlide {
   0% {
@@ -417,6 +426,7 @@ body {
   100% {
     color: #F2F3F3;
     padding-top: 85px; } }
+
 .calc__tally {
   background-color: #202936;
   width: 100%;
@@ -472,7 +482,8 @@ body {
     margin: 35px;
     border-radius: 50%;
     border: 1px solid transparent;
-    transition: all .1s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
     z-index: 2; }
 
 .calc__val, .calc__clear, .calc__backspace,
@@ -491,13 +502,14 @@ body {
 .calc__unit:hover {
   background-color: #1D2630; }
   .calc__unit:hover:after {
-    border: 1px solid #F2F3F3;
+    border: 1px solid #CAA37C;
     border-radius: 50%;
     margin: 15px; }
 
 .calc__unit:active:after {
   border: 1px solid #CAA37C;
   background-color: #CAA37C; }
+
 .calc__unit:active .calc__val, .calc__unit:active .calc__clear, .calc__unit:active .calc__backspace,
 .calc__unit:active .calc__int, .calc__unit:active .calc__operator, .calc__unit:active .calc__decimal {
   font-weight: 400;
@@ -509,40 +521,27 @@ body {
 .calc__unit--offset {
   margin-left: 75px; }
 
-.calc__tally--blink:after {
+.type--blink:after {
   color: #CAA37C;
   content: "|";
-  -webkit-animation: 1.5s blink step-end infinite;
-  -moz-animation: 1.5s blink step-end infinite;
-  -ms-animation: 1.5s blink step-end infinite;
-  -o-animation: 1.5s blink step-end infinite;
-  animation: 1.5s blink step-end infinite; }
+  -webkit-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite; }
 
 @keyframes "blink" {
   from, to {
     color: transparent; }
   50% {
     color: #CAA37C; } }
-@-moz-keyframes blink {
-  from, to {
-    color: transparent; }
-  50% {
-    color: #CAA37C; } }
+
 @-webkit-keyframes "blink" {
   from, to {
     color: transparent; }
   50% {
     color: #CAA37C; } }
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent; }
-  50% {
-    color: #CAA37C; } }
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent; }
-  50% {
-    color: #CAA37C; } }
+
+.select ::-moz-selection {
+  background: #82878E; }
+
 .select ::selection {
   background: #82878E; }
 
@@ -559,4 +558,4 @@ body {
   background-color: transparent;
   border: 0; }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=reckon.css.map */
